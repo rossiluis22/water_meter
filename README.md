@@ -11,4 +11,4 @@ Water meter device for Home Assistant
 
 2. Go to your browser and enter the Wemos IP address
 2.1 Then go to `Configuration-->Configure MQTT`and add your MQTT server info
-2.2 Go to `Configure Module` 
+2.2 Go to `Configure Module` --> Module Type `Generic (18)` --> D2  **GPIO4** `COUNTER1`
