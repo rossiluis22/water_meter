@@ -29,8 +29,10 @@ Plug the water sensor to Wemos D1 mini pro: [Wemos pin out ](https://github.com/
 <img src="https://github.com/rossiluis22/water_meter/blob/master/photo_reference/wemos_pin_connection.png?raw=true" height="200" width="400">
 
 ## HOME ASSISTANT INSTRUCTIONS
-Assuming that you already have a MQTT server such as Mosquitto
-Enable MQTT and MQTT Discovery [More Info](https://www.home-assistant.io/integrations/mqtt/)
+Assuming that you already have a MQTT server such as Mosquitto.
+
+Enable MQTT and MQTT Discovery [More Info](https://www.home-assistant.io/integrations/mqtt/).
+
 In your **Home Assistant** navigate to `Configuration-->Integrations-->MQTT` select the device, then `MQTT Info` and take note of the Sensor info inside **Entities** --> **Subscribed topics** --> tele/**YOUR-DEVICE-NAME**_**ClientID**/SENSOR  
 
 **Ex:** `tele/watersoleil_636D34/SENSOR`.
