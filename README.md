@@ -23,6 +23,8 @@ Plug the water sensor to Wemos D1 mini pro: [Wemos pin out ](https://github.com/
 | Pin: GND | Black wire (ground) |
 | Pin: D2 | Yellow wire (data) |
 
+[Wemos pin out ](https://github.com/rossiluis22/water_meter/blob/master/photo_reference/wemos_pin_connection.png?raw=true){:height="24px" width="48px"}
+
 ## HOME ASSISTANT INSTRUCTIONS
 Assuming that you already have a MQTT server such as Mosquitto
 Enable MQTT and MQTT Discovery [More Info](https://www.home-assistant.io/integrations/mqtt/)
@@ -41,3 +43,4 @@ Now in your ```sensor.yaml``` enter your already copied sensor info and replace 
      name: "MQTT Sensor Water"
      value_template: "{{ ( value_json['COUNTER'].C1 | multiply(0.001648) | float ) | round(2) }}"
      unit_of_measurement: "l"
+```
