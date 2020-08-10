@@ -37,7 +37,7 @@ Now in your ```sensor.yaml``` enter your already copied sensor info and replace 
 **Ex: 1 Liter/607 (pulses)=0.001648** 
 ```  
      - platform: mqtt
-     state_topic: "tele/**YOUR-DEVICE-NAME**_**ClientID**/SENSOR"
+     state_topic: "tele/YOUR-DEVICE-NAME_ClientID/SENSOR"
      name: "MQTT Sensor Water"
      value_template: "{{ ( value_json['COUNTER'].C1 | multiply(0.001648) | float ) | round(2) }}"
      unit_of_measurement: "l"
