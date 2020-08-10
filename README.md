@@ -34,9 +34,7 @@ In your **Home Assistant** navigate to `Configuration-->Integrations-->MQTT` sel
 
 Now in your ```sensor.yaml``` enter your already copied sensor info and replace with your values. 
 
-**NOTE** : you must calibrate your sensor by using measuring jar, take note of how many pulses is 1 Liter and divide it by the pulses. In my case: 
-
-**Ex: 1 Liter/607 (pulses)=0.001648** 
+**NOTE** : you must calibrate your sensor by using measuring jar, take note of how many pulses is 1 Liter and divide it by the pulses. In my case: **Ex: 1 Liter/607 (pulses)=0.001648** 
 ```  
      - platform: mqtt
      state_topic: "tele/YOUR-DEVICE-NAME_ClientID/SENSOR"
