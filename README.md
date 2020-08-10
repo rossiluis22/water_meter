@@ -1,5 +1,8 @@
 # Water Meter
 Water meter device for Home Assistant
+| :warning: WARNING          |
+|:---------------------------|
+| Any reliance you place on this guide is strictly at your own risk.|
 
 ## REQUIREMENTS
 - [Water Flow Sensor](https://es.aliexpress.com/item/32871294401.html?spm=a2g0s.9042311.0.0.d1124c4dEI47oQ)
