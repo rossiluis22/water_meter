@@ -44,4 +44,4 @@ Now in your ```sensor.yaml``` enter your already copied sensor info and replace 
      value_template: "{{ ( value_json['COUNTER'].C1 | multiply(0.001648) | float ) | round(2) }}"
      unit_of_measurement: "l"
 ```
-Finally you should have a sensor called `sensor.mqtt_sensor_water` and with help of [utility meter](https://www.home-assistant.io/integrations/utility_meter/) you would be able to measure how many water you cosume.
+Finally you should have a sensor called `sensor.mqtt_sensor_water` and with help of [utility meter](https://www.home-assistant.io/integrations/utility_meter/) you would be able to measure how many water you cosume daily and monthly.
