@@ -23,7 +23,7 @@ Plug the water sensor to Wemos D1 mini pro: [Wemos pin out ](https://github.com/
 | Pin: GND | Black wire (ground) |
 | Pin: D2 | Yellow wire (data) |
 
-<img src="https://github.com/rossiluis22/water_meter/blob/master/photo_reference/wemos_pin_connection.png?raw=true" height="300" width="300">
+<img src="https://github.com/rossiluis22/water_meter/blob/master/photo_reference/wemos_pin_connection.png?raw=true" height="200" width="400">
 
 ## HOME ASSISTANT INSTRUCTIONS
 Assuming that you already have a MQTT server such as Mosquitto
