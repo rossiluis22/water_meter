@@ -35,11 +35,11 @@ Enable MQTT and MQTT Discovery [More Info](https://www.home-assistant.io/integra
 
 In your **Home Assistant** navigate to `Configuration-->Integrations-->MQTT` select the device, then `MQTT Info` and take note of the Sensor info inside **Entities** --> **Subscribed topics** --> tele/**YOUR-DEVICE-NAME**_**ClientID**/SENSOR  
 
-**Ex:** `tele/watersoleil_636D34/SENSOR`.
+**Ex.:** `tele/watersoleil_636D34/SENSOR`.
 
 Now in your ```sensor.yaml``` enter your already copied sensor info and replace with your values. 
 
-**NOTE** : you must calibrate your sensor by using measuring jar, take note of how many pulses is 1 Liter and divide it by the pulses. In my case: **Ex: 1 Liter/607 (pulses)=0.001648** 
+**NOTE** : you must calibrate your sensor by using measuring jar, take note of how many pulses is 1 Liter and divide it by the pulses. In my case: **Ex.: 1 Liter/607 (pulses)=0.001648** 
 ```  
      - platform: mqtt
      state_topic: "tele/YOUR-DEVICE-NAME_ClientID/SENSOR"
